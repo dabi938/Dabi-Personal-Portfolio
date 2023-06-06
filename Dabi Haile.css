@@ -1,0 +1,281 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  'poppins',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    padding: 22px 16%;
+    transition: all .40s ease;
+}
+#main_icon{
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    width: 135px;
+    height: auto;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: white;
+    font-size:1em;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 2px;
+    transition: all .40s ease;
+    border-radius: 0.5em;
+}
+.navbar a:hover{
+    background: #fd4776;
+    color: white;
+    font-size: 1.1em;
+}
+
+section{
+    padding: 160px 16% 90px;
+}
+.home{
+    height:100vh;
+    width: 100%;
+    position: relative;
+    background-image:url("lantern-night-tree.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.home_text{
+    background: linear-gradient(
+        120deg,
+        #1c99fe 20.69%,
+        #a186eb 50.19%,
+        #fd4766 79.69%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.home_text h2{
+    margin: 16px 0;
+    font-size: 5em;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;    
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2em;
+}
+.about_ima img{
+    width:100%;
+    height: auto;
+    max-width:460px;
+}
+.about_text h1{
+     background: linear-gradient( 120deg, #1c99fe 33%, #a186eb 33%, #fd4766 33%);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 3em;
+}
+.about_text p{
+    margin: 10px 0;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.edu_text{
+    text-align: center;
+}
+.edu_text h1{
+    font-size: 3em;
+    font-weight: 500;
+    background: linear-gradient(
+        120deg,
+        #1c99fe 50%,
+        #a186eb 50%,
+        #fd4766 33%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.edu_contene{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    align-items: center;
+    text-align: center;
+    gap:2em;
+    margin-top: 2em;
+}
+.box{
+    padding: 35px;
+    border-radius: 0.5em;
+    background:#090808;
+    border-top:5px solid transparent;
+    transition: all .40s ease;
+}
+.box img{
+    width:42%;
+    height: auto;
+    max-width:460px;
+}
+.box h3{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 15px 0;
+    transition: all .40s ease;
+}
+.box:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top:5px solid #0c8aeb;
+}
+.box h3:hover{
+    color: #fd4776;
+    font-size:30px;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3em;
+}
+.cont_text{
+    margin:15px 0;
+}
+.cont_text h2{
+    font-size: 3em;
+    font-weight: 500;
+    margin-bottom:10px;
+    background: linear-gradient(
+        120deg,
+        #1c99fe 50%,
+        #a186eb 50%,
+        #fd4766 33%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+.cont_text h4{
+    margin-bottom:20px;
+}
+.cont_icons i{
+    height: 50px;
+    width: 50px;
+    background:#090808;
+    border-radius: 0.5em;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right:10px ;
+    transition:all .40e ease;
+} 
+.cont_icons i:hover{
+    transform: scale(1.01) translateY(-5px);
+    color:white;
+    background: #fd4766;
+}
+
+.cont_form form input,textarea{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 18px;
+    background: #090808;
+    color: white;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+}
+.cont_form form textarea{
+    resize: none;
+    height: 220px;
+}
+.cont_form form .submit{
+    display: inline-block;
+    font-size: 16px;
+    padding: 0;
+    font-weight:400px;
+    background-color: #eb4a4a;
+    color: white;
+    width:190px;
+    transition: all .40s ease;
+    cursor:pointer;
+}
+@media(max-width:769px){
+    .navbar{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        text-align: right;
+        transition: all .40s ease;
+        
+    }
+    #main_icon{
+        display: block;
+    }
+    .navbar a{
+        position:absolute;
+        text-align:right;
+        display: none;
+    }
+
+}
+@media(max-width:426px){
+    .home{
+        height:85vh;
+    }
+    .home_text h2{
+        font-size: 3em;   
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 2em;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media(max-width:426px){
+    .home{
+        height:65vh;
+    }
+    .home_text h2{
+        margin: 16px 0;
+        font-size: 2em;
+    }
+    .edu_contene{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+}
